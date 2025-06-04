@@ -1,0 +1,28 @@
+// 该文件的作用是：
+// 引入 Element Plus 的默认变量文件；
+// 使用 @forward ... with (...) 语法，自定义其颜色主题；
+// 使整个项目中使用 Element Plus 组件时，自动应用新的配色方案。
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  $colors: (
+    'primary': (
+      // 主色
+      'base': #27ba9b,
+    ),
+    'success': (
+      // 成功色
+      'base': #1dc779,
+    ),
+    'warning': (
+      // 警告色
+      'base': #ffb302,
+    ),
+    'danger': (
+      // 危险色
+      'base': #e26237,
+    ),
+    'error': (
+      // 错误色
+      'base': #cf4444,
+    ),
+  )
+)
